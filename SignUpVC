@@ -1,0 +1,29 @@
+//
+//  SignUpVC.swift
+//  SignIn
+//
+
+import UIKit
+
+class SignUpVC: UIViewController {
+
+    @IBOutlet weak var SignupButton: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        SignupButton.layer.cornerRadius = SignupButton.bounds.size.height / 2
+        SignupButton.layer.borderWidth = 1
+        SignupButton.layer.borderColor = UIColor.blue.cgColor
+    
+    }
+    
+    @IBAction func ClickSignupButton(_ sender: Any) {
+        
+        
+        
+    }
+    
+    @IBAction func pop(_ sender: Any) {
+     self.navigationController?.popViewController(animated: true)
+    }
+}
